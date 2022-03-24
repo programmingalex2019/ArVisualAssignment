@@ -21,7 +21,15 @@ public class InfoBehaviour : MonoBehaviour
 
     public void OpenInfo()
     {
+
         desiredScale = Vector3.one;
+
+        if (!gameObject.GetComponent<AudioSource>().isPlaying)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+
+ 
     }
 
     public void CloseInfo()

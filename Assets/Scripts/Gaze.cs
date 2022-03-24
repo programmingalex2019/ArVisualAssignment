@@ -7,12 +7,13 @@ public class Gaze : MonoBehaviour
 {
 
     List<InfoBehaviour> infos = new List<InfoBehaviour>();
-    private float speed;
+
 
     // Start is called before the first frame update
     void Start()
     {
         infos = FindObjectsOfType<InfoBehaviour>().ToList();
+
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class Gaze : MonoBehaviour
         if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
         {
             GameObject go = hit.collider.gameObject;
+           
             if (go.CompareTag("hasInfo"))
             {
                 OpenInfo(go.GetComponent<InfoBehaviour>());
