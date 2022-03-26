@@ -10,6 +10,7 @@ public class InfoBehaviour : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     Transform SectionInfo; //that's what we scale
+    public GameObject text;
 
     Vector3 desiredScale = Vector3.zero; //default info
 
@@ -23,6 +24,9 @@ public class InfoBehaviour : MonoBehaviour
     {
 
         desiredScale = Vector3.one;
+
+        //updating the score
+        Scoring.score += 10;
 
         if (!gameObject.GetComponent<AudioSource>().isPlaying)
         {
