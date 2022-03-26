@@ -625,6 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 1726634917}
+  text: {fileID: 0}
 --- !u!65 &252745907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1374,7 +1375,6 @@ GameObject:
   - component: {fileID: 564015365}
   - component: {fileID: 564015369}
   - component: {fileID: 564015371}
-  - component: {fileID: 564015370}
   m_Layer: 0
   m_Name: dog
   m_TagString: hasInfo
@@ -1415,6 +1415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 933988756}
+  text: {fileID: 387188823}
 --- !u!65 &564015366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1573,18 +1574,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &564015370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564015363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01abfd37a598d4845acd970af7449528, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &564015371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1618,6 +1607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 969682255}
+  text: {fileID: 0}
 --- !u!65 &596732495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2579,6 +2569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 2086622902}
+  text: {fileID: 0}
 --- !u!65 &1237028140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3683,6 +3674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 2041547787}
+  text: {fileID: 0}
 --- !u!82 &1788192132
 AudioSource:
   m_ObjectHideFlags: 0
