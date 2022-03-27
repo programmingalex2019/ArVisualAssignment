@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -511,6 +511,7 @@ GameObject:
   - component: {fileID: 249411496}
   - component: {fileID: 249411498}
   - component: {fileID: 249411497}
+  - component: {fileID: 249411499}
   m_Layer: 5
   m_Name: ScorePanel
   m_TagString: Untagged
@@ -576,6 +577,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249411495}
   m_CullTransparentMesh: 1
+--- !u!114 &249411499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249411495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03809056c0f8c6439e9b242d405a819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1937764237}
 --- !u!1 &252745904
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +639,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 1726634917}
-  text: {fileID: 0}
 --- !u!65 &252745907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1415,7 +1428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 933988756}
-  text: {fileID: 387188823}
 --- !u!65 &564015366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1489,7 +1501,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9f73ca3fc3260a941bee8b65046f8322, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1607,7 +1619,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 969682255}
-  text: {fileID: 0}
 --- !u!65 &596732495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2569,7 +2580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 2086622902}
-  text: {fileID: 0}
 --- !u!65 &1237028140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3674,7 +3684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SectionInfo: {fileID: 2041547787}
-  text: {fileID: 0}
 --- !u!82 &1788192132
 AudioSource:
   m_ObjectHideFlags: 0
