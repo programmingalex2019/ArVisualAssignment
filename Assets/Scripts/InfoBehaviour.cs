@@ -6,6 +6,7 @@ public class InfoBehaviour : MonoBehaviour
 {
 
     const float SPEED = 6f;
+    private bool added = false;
 
     // Start is called before the first frame update
     [SerializeField]
@@ -21,12 +22,25 @@ public class InfoBehaviour : MonoBehaviour
 
     public void OpenInfo()
     {
+
         desiredScale = Vector3.one;
+
+        if (added == false)
+        {
+            ScoreManager.instance.AddPoint();
+            if (!gameObject.GetComponent<AudioSource>().isPlaying)
+            {
+                gameObject.GetComponent<AudioSource>().Play();
+            }
+            added = true;
+        }
+
     }
 
     public void CloseInfo()
     {
         desiredScale = Vector3.zero;
+        added = false;
     }
 
 }
